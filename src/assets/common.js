@@ -1,6 +1,10 @@
+import Vue from 'vue'
 import duduPhones from './phones.json';
 // import tgBusiness from './business.json';
 // import tgService from './service.json';
+
+
+
 export default{
 	duduData:function(){
 		return duduPhones

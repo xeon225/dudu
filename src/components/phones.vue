@@ -1,7 +1,7 @@
 <template>
-  <div class="phones">
-    <div v-for="item in duduItem()">
-      <img :src="'/static/year_2/'+item.url" alt="">
+  <div class="phones bg-white">
+    <div v-for="item in duduItem()" style="background-image: url(/static/bg.png);background-size: contain;background-repeat: no-repeat;background-position: center;">
+      <img v-lazyload="'/static/year_2/'+item.url" src="/static/blocker.jpg" alt="" style="display:block;width:100%;">
     </div>
   </div>
 </template>
@@ -23,7 +23,6 @@ export default {
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
